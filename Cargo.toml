@@ -3,8 +3,8 @@ name = "linear_regression"
 version = "0.0.1"
 authors = ["adjivas <adjivas@users.noreply.github.com>"]
 description = ""
-documentation = "https://adjivas.github.io/linear_regression"
-repository = "https://github.com/adjivas/linear_regression.git"
+documentation = "https://afaucher17.github.io/linear_regression"
+repository = "https://github.com/afaucher17/linear_regression.git"
 readme = "README.md"
 keywords = ["visualize", "linear", "regression"]
 license = "MIT OR Apache-2.0"
@@ -21,3 +21,10 @@ doc = false
 
 [features]
 unstable = [] # for travis-cargo
+
+[dependencies]
+csv = "0.14"
+
+[dependencies.clap]
+version = "*"
+features = ["yaml", "suggestions", "color"]

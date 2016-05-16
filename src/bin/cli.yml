@@ -1,0 +1,15 @@
+# This file describe the command line interface options
+name: Linear Regression (Visualize Data) 
+version: 0.1
+about: This program is used to train the model for the linear regression. It saves the variables theta0 and theta1 for use in the other program.
+author:
+  - afaucher17 <afaucher17@users.noreply.github.com>
+
+args:
+    - file:
+        help: Defines the input.
+        short: f
+        long: file
+        multiple: true
+        takes_value: true
+        required: true
