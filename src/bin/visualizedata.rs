@@ -40,7 +40,7 @@ fn linear_regression(input_file: String)
         });
         (x - (res.0 / rows.len() as f64 * lr), y - (res.1 / rows.len() as f64 * lr))
     });
-    write_to_file(&format!("{},{}\n{},{}", t0, t1, min, max), &String::from("/tmp/afaucher/.tmp"));
+    write_to_file(&format!("{0:.2},{1:.2}\n{2:.2},{3:.2}", t0, t1, min as f64, max as f64), &String::from("/tmp/afaucher/.tmp"));
 }
 
 fn main() {
