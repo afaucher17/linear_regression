@@ -13,10 +13,9 @@ fn main () {
             (rows[0].0, rows[0].1, rows[1].0, rows[1].1)
         }
     };
-    println!("{} {} {} {}", t0, t1, min, max);
     println!("Please enter a mileage: ");
     let mut mileage = String::new();
     io::stdin().read_line(&mut mileage).expect("failed to read the mileage");
     let mileage: f64 = mileage.trim().parse().expect("The mileage you entered is not an interger.");
-    println!("{}", t0 + (t1 * if min != 0.0 && max != 0.0 { (mileage - min) / (max - min) } else { mileage }));
+    println!("Estimated price: {0:.2}", t0 + (t1 * if min != 0.0 && max != 0.0 { (mileage - min) / (max - min) } else { mileage }));
 }
