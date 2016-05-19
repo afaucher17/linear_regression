@@ -10,13 +10,13 @@ keywords = ["visualize", "linear", "regression"]
 license = "MIT OR Apache-2.0"
 
 [[bin]]
-name = "visualizedata"
-path = "src/bin/visualizedata.rs"
+name = "machine_learning"
+path = "src/bin/machine_learning.rs"
 doc = false
 
 [[bin]]
-name = "linearfunction"
-path = "src/bin/linearfunction.rs"
+name = "linear_regression"
+path = "src/bin/linear_regression.rs"
 doc = false
 
 [features]
